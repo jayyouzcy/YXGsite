@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地下城居住资格抽签</title>
+    <link rel="stylesheet" href="../backblack.css">
+    <link rel="stylesheet" href="lottery.css">
+    <script defer src="lottery.js"></script>
+</head>
+
+<body>
+    <!--没导航栏-->
+    <a id="return" href="../index.html">返回</a>
+    <a href="../yx_client.html" style="text-decoration: none;color:#fff">
+        <div class="download">
+            <h2>前往下载客户端</h2>
+        </div>
+    </a>
+    <div style="background-color: #151516;padding:20px;text-align: center;">
+        <p>请前往客户端抽签以保存数据。<a href="../yx_client.html" style="text-decoration: none;color:rgb(56, 150, 237)">详情...
+                &#8250;</a></p>
+    </div>
+    <div class="lotteryouter">
+        <div
+            style="position:relative;top:-2vh;font-size: 35px;color:#ffffff1f">
+            <h1>模拟抽签</h1>
+        </div>
+        <div style="background-color: #091A2E;line-height: 3rem;">
+            <h3>地下城居住资格</h3>
+            <h2>个人信息维护</h2>
+        </div>
+        <div class="inputmain">
+            <p>姓名</p>
+            <div><input type="text" id="name"></div>
+            <p>性别</p>
+            <div><input type="text" id="gender"></div>
+            <p>年龄</p>
+            <div><input type="text" id="age"></div>
+            <p>国籍</p>
+            <div style="margin-bottom: 20px;"><input type="text" id="number"></div>
+        </div>
+        <div style="background-color: #091A2E;line-height: 3rem;">
+            <h3 id="btn">确认</h3>
+        </div>
+    </div>
+    <div class="loader">Loading...</div>
+
+    <div class="check">
+        <div>
+            <img src="yxgwhite.png" style="height:65px;margin:5px 0 0 10px">
+        </div>
+        <div style="position: relative;top:15px">
+            <div style="background-color: #1255B5;margin:0 20px;padding:5px 20px;text-align: center;">PERSONAL PROFILE
+                OF
+                GLOBAL SORTITION PROROCOL</div>
+        </div>
+        <div style="background-color: #a5caff47;padding:35px 10px 20px 10px">
+            <div>地下城居住许可证编码：</div>
+            <div id="code" style="color:#1255B5"></div>
+            <div>姓名：<span id="name2"></span></div>
+            <div>性别：<span id="gender2"></span></div>
+            <div>年龄：<span id="age2"></span></div>
+            <div>国籍：<span id="number2"></span></div>
+            <div>地下城：<span id="duncity"></span></div>
+        </div>
+        <div style="text-align: center;margin:20px 0">
+            <h1>您已获得地下城入住资格</h1>
+            <span>YOU ARE QUALIFIED TO ENTER THE UNDERGROUND CITY</span>
+        </div>
+        <div style="background-color: #1255B5;padding:10px;text-align: center;">
+            <h3>详细入住方式等待进一步通知</h3>
+            <span>DETAILS OF HOW TO GET TO THE UNDERGROUND CITY WILL HAVE TO WAIT FOR FURTHER NOTICE</span>
+        </div>
+    </div>
+    <div class="not">
+        <div>
+            <img src="yxgwhite.png" style="height:65px;margin:5px 0 0 10px">
+        </div>
+        <div style="position: relative;top:15px">
+            <div style="background-color: #1255B5;margin:0 20px;padding:5px 20px;text-align: center;">PERSONAL PROFILE
+                OF
+                GLOBAL SORTITION PROROCOL</div>
+        </div>
+        <div style="background-color: #a5caff47;padding:35px 10px 20px 10px">
+            <div>姓名：<span id="name3"></span></div>
+            <div>性别：<span id="gender3"></span></div>
+            <div>年龄：<span id="age3"></span></div>
+            <div>国籍：<span id="number3"></span></div>
+        </div>
+        <div style="text-align: center;margin:20px 0">
+            <h1>您未中签</h1>
+            <span>NOT SELECTED</span>
+        </div>
+        <div style="background-color: #1255B5;padding:10px;text-align: center;">更多信息请参阅：https//yxgov.top/</div>
+    </div>
+    <div id="copy" style="text-align: center;margin:10px 0;display: none;">&copy; YXG 2023 保留一切最终解释权力</div>
+</body>
+
+</html>
