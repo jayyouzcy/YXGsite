@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    background-color: #000000;
+    color: #fff
+}
+
+@media (min-width:800px) {
+    .pclist {
+        display: block;
+    }
+
+    .pcfooter {
+        display: grid
+    }
+
+    .molist,
+    #menuicond7,
+    .mofooter {
+        display: none;
+    }
+
+}
+
+@media (max-width:800px) {
+    #menuicond7 {
+        display: block;
+        position: relative;
+    }
+
+    .mofooter {
+        display: grid
+    }
+
+    .pclist a,
+    .pcfooter {
+        display: none
+    }
+
+}
+
+#yxgicon {
+    height: 5rem;
+}
+
+
+#menuicond7 {
+    height: 1.5rem
+}
+
+.topnav a:link,
+.topnav a:visited {
+    color: #d7d7d7;
+    text-decoration: none;
+}
+
+.topnav a:hover,
+.topnav a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.pclist a {
+    margin: 0 20px;
+}
+
+.pclist {
+    margin-right: 30px;
+}
+
+.molist a {
+    text-decoration: none;
+    color: #d7d7d7;
+    font-weight: 600;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.molist {
+    list-style-type: none;
+    line-height: 1.5rem;
+    padding-left: 8vw;
+    background-color: #000;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    z-index: 3;
+}
+
+.molistopen {
+    list-style-type: none;
+    line-height: 1.5rem;
+    padding-left: 8vw;
+    background-color: #000;
+    position: fixed;
+    top: 80px;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+    z-index: 3;
+}
+
+.pcfooter a:link,
+.pcfooter a:visited,
+.mofooter a:link,
+.mofooter a:visited {
+    text-decoration: none;
+    color: #d7d7d7;
+    font-weight: 100;
+}
+
+.mofooter a:hover,
+.mofooter a:active,
+.pcfooter a:hover,
+.pcfooter a:active,
+.mofooter a:hover,
+.mofooter a:active {
+    text-decoration: none;
+    color: #ffffff
+}
+
+.pcfooter hr,
+.mofooter hr {
+    height: 0.1px;
+    border: none;
+    background-color: #c0c0c0
+}
+
+.pcfooter p {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.mofooter span {
+    color: #ffffff
+}
+
+.pcbottomnav div {
+    margin: 10px 0;
+    width: 200px;
+    line-height: 35px;
+}
+
+.mobottomnav div {
+    line-height: 35px
+}
+
+.mobottomnav a {
+    padding-left: 1rem
+}
+
+.f {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pcfooter {
+    justify-content: center;
+    padding: 4vw;
+    grid-template-columns: minmax(800px, 1500px);
+}
+
+.mofooter {
+    justify-content: center;
+    padding: 4vw;
+    grid-template-columns: minmax(200px, 800px);
+}
+
+.mobottomlist {
+    position: fixed;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0 ease;
+}
+
+.mobottomlistopen {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+}
+
+.mobottomlist2 {
+    position: fixed;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0 ease;
+}
+
+.mobottomlist2open {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+}
+
+.mobottomlist3 {
+    position: fixed;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0 ease;
+}
+
+.mobottomlist3open {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+}
+
+.mobottomlist4 {
+    position: fixed;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0 ease;
+}
+
+.mobottomlist4open {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+}
+
+.mobottomlist5 {
+    position: fixed;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0 ease;
+}
+
+.mobottomlist5open {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+}
+
+.mobottomlist6 {
+    position: fixed;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0 ease;
+}
+
+.mobottomlist6open {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    transition: max-height 0.5s ease;
+}
+
+.download {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: solid #7d7d7d 1px;
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+}

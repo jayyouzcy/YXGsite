@@ -1,0 +1,111 @@
+@media (min-width:800px) {
+    h1 {
+        font-size: 44px;
+    }
+
+    .roll img {
+        width: 100%
+    }
+}
+
+@media (max-width:800px) {
+    h1 {
+        font-size: 31px;
+    }
+
+    .roll img {
+        height: 100%;
+    }
+}
+
+.products {
+    width: 100%;
+    overflow: hidden;
+}
+
+.roll {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.rollmain {
+    width: 100%;
+    overflow: hidden;
+    display: flex
+}
+
+.rollmain div {
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.rollmain img {
+    width: 80%;
+    margin: 0 10%
+}
+
+.pointer {
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    top: -30px
+}
+
+.static {
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff81;
+    border-radius: 50%;
+    margin: 0 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.active {
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box a:link,
+.box a:visited {
+    text-decoration: none;
+    color: #0080ff
+}
+
+.box a:hover,
+.box a:active {
+    text-decoration: none;
+    color: #002fff
+}
+
+.box>div {
+    background-image: url(img/index/a.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 10px;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+}
+
+.yxgadd img {
+    height: 80px
+}
